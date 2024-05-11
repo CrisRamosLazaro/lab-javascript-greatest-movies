@@ -135,7 +135,13 @@ function turnHoursToMinutes(moviesArray) {
 
     })
 
-    return movieTimes // --returning the array with the times in minutes just so the code runs
+    let movieListUpdated = moviesArray.map((eachFilm) => {
+        movieListUpdated.duration = movieTimes
+    })
+
+
+
+    return movieListUpdated // --returning the array with the times in minutes just so the code runs
 
 
 
